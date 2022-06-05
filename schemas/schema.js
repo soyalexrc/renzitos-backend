@@ -12,6 +12,11 @@ import color from "./color";
 import size from "./size";
 import gallery from "./gallery";
 import gender from "./gender";
+import user from "./user";
+import order from "./order";
+import orderItem from "./orderItem";
+import shippingAddress from "./shippingAddress";
+import paymentResult from "./paymentResult";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,7 +27,12 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    user,
     product,
+    order,
+    orderItem,
+    shippingAddress,
+    paymentResult,
     color,
     gender,
     category,
